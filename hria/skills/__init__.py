@@ -1,0 +1,1 @@
+"""Typed analytical tool registry."""
