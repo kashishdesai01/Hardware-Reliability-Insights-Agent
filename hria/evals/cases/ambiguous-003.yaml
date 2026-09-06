@@ -1,0 +1,6 @@
+id: ambiguous-003
+family: ambiguous
+split: development
+question: Did it improve?
+expects:
+  status: clarification

@@ -1,0 +1,11 @@
+id: lookup-002
+family: lookup
+split: development
+question: Show test runs for LOT-0002
+expects:
+  tools:
+  - query_test_runs
+  args_contain:
+    filters:
+      lot_code: LOT-0002
+  status: answered

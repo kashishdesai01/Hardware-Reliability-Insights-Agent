@@ -1,0 +1,890 @@
+{
+  "cases": [
+    {
+      "answer": "all: failure probability is 16.4% (95% CI 13.8% to 19.6%) from 633 units.",
+      "case_id": "aggregation-001",
+      "checks": {
+        "argument_exactness": true,
+        "entity": true,
+        "status": true,
+        "tool_selection": true
+      },
+      "family": "grouped_aggregation",
+      "latency_ms": 81.64300001226366,
+      "passed": true
+    },
+    {
+      "answer": "all: failure probability is 19.1% (95% CI 16.3% to 22.4%) from 633 units.",
+      "case_id": "aggregation-002",
+      "checks": {
+        "argument_exactness": true,
+        "entity": true,
+        "status": true,
+        "tool_selection": true
+      },
+      "family": "grouped_aggregation",
+      "latency_ms": 13.033375144004822,
+      "passed": true
+    },
+    {
+      "answer": "all: failure probability is 23.1% (95% CI 20.0% to 26.5%) from 633 units.",
+      "case_id": "aggregation-003",
+      "checks": {
+        "argument_exactness": true,
+        "entity": true,
+        "status": true,
+        "tool_selection": true
+      },
+      "family": "grouped_aggregation",
+      "latency_ms": 14.055083971470594,
+      "passed": true
+    },
+    {
+      "answer": "all: failure probability is 28.4% (95% CI 25.1% to 32.1%) from 633 units.",
+      "case_id": "aggregation-004",
+      "checks": {
+        "argument_exactness": true,
+        "entity": true,
+        "status": true,
+        "tool_selection": true
+      },
+      "family": "grouped_aggregation",
+      "latency_ms": 12.514499947428703,
+      "passed": true
+    },
+    {
+      "answer": "all: failure probability is 35.5% (95% CI 31.6% to 39.7%) from 633 units.",
+      "case_id": "aggregation-005",
+      "checks": {
+        "argument_exactness": true,
+        "entity": true,
+        "status": true,
+        "tool_selection": true
+      },
+      "family": "grouped_aggregation",
+      "latency_ms": 12.354375096037984,
+      "passed": true
+    },
+    {
+      "answer": "all: failure probability is 36.8% (95% CI 32.7% to 41.2%) from 633 units.",
+      "case_id": "aggregation-006",
+      "checks": {
+        "argument_exactness": true,
+        "entity": true,
+        "status": true,
+        "tool_selection": true
+      },
+      "family": "grouped_aggregation",
+      "latency_ms": 11.91499992273748,
+      "passed": true
+    },
+    {
+      "answer": "all: failure probability is 36.8% (95% CI 32.7% to 41.2%) from 633 units.",
+      "case_id": "aggregation-007",
+      "checks": {
+        "argument_exactness": true,
+        "entity": true,
+        "status": true,
+        "tool_selection": true
+      },
+      "family": "grouped_aggregation",
+      "latency_ms": 13.502749847248197,
+      "passed": true
+    },
+    {
+      "answer": "all: failure probability is 36.8% (95% CI 32.7% to 41.2%) from 633 units.",
+      "case_id": "aggregation-008",
+      "checks": {
+        "argument_exactness": true,
+        "entity": true,
+        "status": true,
+        "tool_selection": true
+      },
+      "family": "grouped_aggregation",
+      "latency_ms": 19.385167164728045,
+      "passed": true
+    },
+    {
+      "answer": "Which part, lot, supplier, or design revision should I analyze, and do you want observed failures, failure probability at a specific horizon, or B10 life?",
+      "case_id": "ambiguous-001",
+      "checks": {
+        "argument_exactness": true,
+        "entity": true,
+        "status": true,
+        "tool_selection": true
+      },
+      "family": "ambiguous",
+      "latency_ms": 0.09425007738173008,
+      "passed": true
+    },
+    {
+      "answer": "I can analyze failure probability, B10 lifetime, two-group survival, anomalous lots/suppliers/stations, measurement trends, or typed test-run history. Which do you need?",
+      "case_id": "ambiguous-002",
+      "checks": {
+        "argument_exactness": true,
+        "entity": true,
+        "status": true,
+        "tool_selection": true
+      },
+      "family": "ambiguous",
+      "latency_ms": 0.050999922677874565,
+      "passed": true
+    },
+    {
+      "answer": "I can analyze failure probability, B10 lifetime, two-group survival, anomalous lots/suppliers/stations, measurement trends, or typed test-run history. Which do you need?",
+      "case_id": "ambiguous-003",
+      "checks": {
+        "argument_exactness": true,
+        "entity": true,
+        "status": true,
+        "tool_selection": true
+      },
+      "family": "ambiguous",
+      "latency_ms": 0.040125101804733276,
+      "passed": true
+    },
+    {
+      "answer": "I can analyze failure probability, B10 lifetime, two-group survival, anomalous lots/suppliers/stations, measurement trends, or typed test-run history. Which do you need?",
+      "case_id": "ambiguous-004",
+      "checks": {
+        "argument_exactness": true,
+        "entity": true,
+        "status": true,
+        "tool_selection": true
+      },
+      "family": "ambiguous",
+      "latency_ms": 0.03891601227223873,
+      "passed": true
+    },
+    {
+      "answer": "Which part, lot, supplier, or design revision should I fit?",
+      "case_id": "ambiguous-005",
+      "checks": {
+        "argument_exactness": true,
+        "entity": true,
+        "status": true,
+        "tool_selection": true
+      },
+      "family": "ambiguous",
+      "latency_ms": 0.037084100767970085,
+      "passed": true
+    },
+    {
+      "answer": "Which two lots, suppliers, or design revisions should I compare?",
+      "case_id": "ambiguous-006",
+      "checks": {
+        "argument_exactness": true,
+        "entity": true,
+        "status": true,
+        "tool_selection": true
+      },
+      "family": "ambiguous",
+      "latency_ms": 0.03991718403995037,
+      "passed": true
+    },
+    {
+      "answer": "Which part, lot, supplier, or design revision should I analyze, and do you want observed failures, failure probability at a specific horizon, or B10 life?",
+      "case_id": "ambiguous-007",
+      "checks": {
+        "argument_exactness": true,
+        "entity": true,
+        "status": true,
+        "tool_selection": true
+      },
+      "family": "ambiguous",
+      "latency_ms": 0.032084062695503235,
+      "passed": true
+    },
+    {
+      "answer": "I can analyze failure probability, B10 lifetime, two-group survival, anomalous lots/suppliers/stations, measurement trends, or typed test-run history. Which do you need?",
+      "case_id": "ambiguous-008",
+      "checks": {
+        "argument_exactness": true,
+        "entity": true,
+        "status": true,
+        "tool_selection": true
+      },
+      "family": "ambiguous",
+      "latency_ms": 0.03283307887613773,
+      "passed": true
+    },
+    {
+      "answer": "LOT-0042 ranks highest: 49.2% observed failures across 132 units, with BH-adjusted q=0.0001943.",
+      "case_id": "anomaly-001",
+      "checks": {
+        "argument_exactness": true,
+        "entity": true,
+        "status": true,
+        "tool_selection": true
+      },
+      "family": "anomaly_attribution",
+      "latency_ms": 22.0701249781996,
+      "passed": true
+    },
+    {
+      "answer": "LOT-0042 ranks highest: 49.2% observed failures across 132 units, with BH-adjusted q=0.0001943.",
+      "case_id": "anomaly-002",
+      "checks": {
+        "argument_exactness": true,
+        "entity": true,
+        "status": true,
+        "tool_selection": true
+      },
+      "family": "anomaly_attribution",
+      "latency_ms": 13.204957824200392,
+      "passed": true
+    },
+    {
+      "answer": "LOT-0042 ranks highest: 49.2% observed failures across 132 units, with BH-adjusted q=0.0001943.",
+      "case_id": "anomaly-003",
+      "checks": {
+        "argument_exactness": true,
+        "entity": true,
+        "status": true,
+        "tool_selection": true
+      },
+      "family": "anomaly_attribution",
+      "latency_ms": 11.208875104784966,
+      "passed": true
+    },
+    {
+      "answer": "LOT-0042 ranks highest: 49.2% observed failures across 132 units, with BH-adjusted q=0.0001943.",
+      "case_id": "anomaly-004",
+      "checks": {
+        "argument_exactness": true,
+        "entity": true,
+        "status": true,
+        "tool_selection": true
+      },
+      "family": "anomaly_attribution",
+      "latency_ms": 10.973250027745962,
+      "passed": true
+    },
+    {
+      "answer": "LOT-0042 ranks highest: 49.2% observed failures across 132 units, with BH-adjusted q=0.0001943.",
+      "case_id": "anomaly-005",
+      "checks": {
+        "argument_exactness": true,
+        "entity": true,
+        "status": true,
+        "tool_selection": true
+      },
+      "family": "anomaly_attribution",
+      "latency_ms": 10.421332903206348,
+      "passed": true
+    },
+    {
+      "answer": "LOT-0042 ranks highest: 49.2% observed failures across 132 units, with BH-adjusted q=0.0001943.",
+      "case_id": "anomaly-006",
+      "checks": {
+        "argument_exactness": true,
+        "entity": true,
+        "status": true,
+        "tool_selection": true
+      },
+      "family": "anomaly_attribution",
+      "latency_ms": 10.578625136986375,
+      "passed": true
+    },
+    {
+      "answer": "LOT-0042 ranks highest: 49.2% observed failures across 132 units, with BH-adjusted q=0.0001943.",
+      "case_id": "anomaly-007",
+      "checks": {
+        "argument_exactness": true,
+        "entity": true,
+        "status": true,
+        "tool_selection": true
+      },
+      "family": "anomaly_attribution",
+      "latency_ms": 13.572416035458446,
+      "passed": true
+    },
+    {
+      "answer": "LOT-0042 ranks highest: 49.2% observed failures across 132 units, with BH-adjusted q=0.0001943.",
+      "case_id": "anomaly-008",
+      "checks": {
+        "argument_exactness": true,
+        "entity": true,
+        "status": true,
+        "tool_selection": true
+      },
+      "family": "anomaly_attribution",
+      "latency_ms": 10.634375037625432,
+      "passed": true
+    },
+    {
+      "answer": "The survival distributions differ with log-rank \u03c7\u00b2=0.256, p=0.6128, using 34 units in LOT-0001 and 34 in LOT-0002.",
+      "case_id": "comparison-001",
+      "checks": {
+        "argument_exactness": true,
+        "entity": true,
+        "status": true,
+        "tool_selection": true
+      },
+      "family": "group_comparison",
+      "latency_ms": 13.624707935377955,
+      "passed": true
+    },
+    {
+      "answer": "The survival distributions differ with log-rank \u03c7\u00b2=0.001, p=0.9789, using 34 units in LOT-0003 and 34 in LOT-0004.",
+      "case_id": "comparison-002",
+      "checks": {
+        "argument_exactness": true,
+        "entity": true,
+        "status": true,
+        "tool_selection": true
+      },
+      "family": "group_comparison",
+      "latency_ms": 10.256791952997446,
+      "passed": true
+    },
+    {
+      "answer": "The survival distributions differ with log-rank \u03c7\u00b2=0.001, p=0.9816, using 34 units in LOT-0005 and 34 in LOT-0006.",
+      "case_id": "comparison-003",
+      "checks": {
+        "argument_exactness": true,
+        "entity": true,
+        "status": true,
+        "tool_selection": true
+      },
+      "family": "group_comparison",
+      "latency_ms": 10.51091612316668,
+      "passed": true
+    },
+    {
+      "answer": "The survival distributions differ with log-rank \u03c7\u00b2=0.332, p=0.5642, using 34 units in LOT-0007 and 34 in LOT-0008.",
+      "case_id": "comparison-004",
+      "checks": {
+        "argument_exactness": true,
+        "entity": true,
+        "status": true,
+        "tool_selection": true
+      },
+      "family": "group_comparison",
+      "latency_ms": 9.756083833053708,
+      "passed": true
+    },
+    {
+      "answer": "The survival distributions differ with log-rank \u03c7\u00b2=0.035, p=0.8522, using 34 units in LOT-0009 and 34 in LOT-0010.",
+      "case_id": "comparison-005",
+      "checks": {
+        "argument_exactness": true,
+        "entity": true,
+        "status": true,
+        "tool_selection": true
+      },
+      "family": "group_comparison",
+      "latency_ms": 10.2037088945508,
+      "passed": true
+    },
+    {
+      "answer": "I cannot answer this reliably. Group LOT-0012 is below the comparison floor.",
+      "case_id": "comparison-006",
+      "checks": {
+        "argument_exactness": true,
+        "entity": true,
+        "status": true,
+        "tool_selection": true
+      },
+      "family": "group_comparison",
+      "latency_ms": 10.446583153679967,
+      "passed": true
+    },
+    {
+      "answer": "The survival distributions differ with log-rank \u03c7\u00b2=6.523, p=0.01065, using 34 units in LOT-0013 and 34 in LOT-0014.",
+      "case_id": "comparison-007",
+      "checks": {
+        "argument_exactness": true,
+        "entity": true,
+        "status": true,
+        "tool_selection": true
+      },
+      "family": "group_comparison",
+      "latency_ms": 9.884750004857779,
+      "passed": true
+    },
+    {
+      "answer": "The survival distributions differ with log-rank \u03c7\u00b2=9.326, p=0.00226, using 34 units in LOT-0015 and 34 in LOT-0016.",
+      "case_id": "comparison-008",
+      "checks": {
+        "argument_exactness": true,
+        "entity": true,
+        "status": true,
+        "tool_selection": true
+      },
+      "family": "group_comparison",
+      "latency_ms": 9.809874929487705,
+      "passed": true
+    },
+    {
+      "answer": "I cannot answer this reliably. The cohort is below the configured precision floor.",
+      "case_id": "insufficient-001",
+      "checks": {
+        "argument_exactness": true,
+        "entity": true,
+        "status": true,
+        "tool_selection": true
+      },
+      "family": "insufficient_data",
+      "latency_ms": 6.401000078767538,
+      "passed": true
+    },
+    {
+      "answer": "I cannot answer this reliably. The cohort is below the configured precision floor.",
+      "case_id": "insufficient-002",
+      "checks": {
+        "argument_exactness": true,
+        "entity": true,
+        "status": true,
+        "tool_selection": true
+      },
+      "family": "insufficient_data",
+      "latency_ms": 5.654624896124005,
+      "passed": true
+    },
+    {
+      "answer": "I cannot answer this reliably. The cohort is below the configured precision floor.",
+      "case_id": "insufficient-003",
+      "checks": {
+        "argument_exactness": true,
+        "entity": true,
+        "status": true,
+        "tool_selection": true
+      },
+      "family": "insufficient_data",
+      "latency_ms": 5.286917090415955,
+      "passed": true
+    },
+    {
+      "answer": "I cannot answer this reliably. The cohort is below the configured precision floor.",
+      "case_id": "insufficient-004",
+      "checks": {
+        "argument_exactness": true,
+        "entity": true,
+        "status": true,
+        "tool_selection": true
+      },
+      "family": "insufficient_data",
+      "latency_ms": 6.057000020518899,
+      "passed": true
+    },
+    {
+      "answer": "I cannot answer this reliably. The cohort is below the configured precision floor.",
+      "case_id": "insufficient-005",
+      "checks": {
+        "argument_exactness": true,
+        "entity": true,
+        "status": true,
+        "tool_selection": true
+      },
+      "family": "insufficient_data",
+      "latency_ms": 5.434167105704546,
+      "passed": true
+    },
+    {
+      "answer": "I cannot answer this reliably. The cohort is below the configured precision floor.",
+      "case_id": "insufficient-006",
+      "checks": {
+        "argument_exactness": true,
+        "entity": true,
+        "status": true,
+        "tool_selection": true
+      },
+      "family": "insufficient_data",
+      "latency_ms": 5.346792051568627,
+      "passed": true
+    },
+    {
+      "answer": "I cannot answer this reliably. The cohort is below the configured precision floor.",
+      "case_id": "insufficient-007",
+      "checks": {
+        "argument_exactness": true,
+        "entity": true,
+        "status": true,
+        "tool_selection": true
+      },
+      "family": "insufficient_data",
+      "latency_ms": 5.625833058729768,
+      "passed": true
+    },
+    {
+      "answer": "I cannot answer this reliably. The cohort is below the configured precision floor.",
+      "case_id": "insufficient-008",
+      "checks": {
+        "argument_exactness": true,
+        "entity": true,
+        "status": true,
+        "tool_selection": true
+      },
+      "family": "insufficient_data",
+      "latency_ms": 5.30462502501905,
+      "passed": true
+    },
+    {
+      "answer": "Estimated B10 life at use conditions is 4,074 hours (95% CI 3,223 to 5,151), based on 210 failures and 423 right-censored units.",
+      "case_id": "lifetime-001",
+      "checks": {
+        "argument_exactness": true,
+        "entity": true,
+        "status": true,
+        "tool_selection": true
+      },
+      "family": "lifetime_fit",
+      "latency_ms": 49.39950001426041,
+      "passed": true
+    },
+    {
+      "answer": "Estimated B10 life at use conditions is 3,690 hours (95% CI 2,494 to 5,458), based on 65 failures and 67 right-censored units.",
+      "case_id": "lifetime-002",
+      "checks": {
+        "argument_exactness": true,
+        "entity": true,
+        "status": true,
+        "tool_selection": true
+      },
+      "family": "lifetime_fit",
+      "latency_ms": 20.23245906457305,
+      "passed": true
+    },
+    {
+      "answer": "Estimated B10 life at use conditions is 1,660 hours (95% CI 1,064 to 2,589), based on 123 failures and 177 right-censored units.",
+      "case_id": "lifetime-003",
+      "checks": {
+        "argument_exactness": true,
+        "entity": true,
+        "status": true,
+        "tool_selection": true
+      },
+      "family": "lifetime_fit",
+      "latency_ms": 31.49770782329142,
+      "passed": true
+    },
+    {
+      "answer": "Estimated B10 life at use conditions is 4,074 hours (95% CI 3,223 to 5,151), based on 210 failures and 423 right-censored units.",
+      "case_id": "lifetime-004",
+      "checks": {
+        "argument_exactness": true,
+        "entity": true,
+        "status": true,
+        "tool_selection": true
+      },
+      "family": "lifetime_fit",
+      "latency_ms": 51.16100003942847,
+      "passed": true
+    },
+    {
+      "answer": "Estimated B10 life at use conditions is 3,690 hours (95% CI 2,494 to 5,458), based on 65 failures and 67 right-censored units.",
+      "case_id": "lifetime-005",
+      "checks": {
+        "argument_exactness": true,
+        "entity": true,
+        "status": true,
+        "tool_selection": true
+      },
+      "family": "lifetime_fit",
+      "latency_ms": 25.780708994716406,
+      "passed": true
+    },
+    {
+      "answer": "Estimated B10 life at use conditions is 1,660 hours (95% CI 1,064 to 2,589), based on 123 failures and 177 right-censored units.",
+      "case_id": "lifetime-006",
+      "checks": {
+        "argument_exactness": true,
+        "entity": true,
+        "status": true,
+        "tool_selection": true
+      },
+      "family": "lifetime_fit",
+      "latency_ms": 35.90120910666883,
+      "passed": true
+    },
+    {
+      "answer": "Estimated B10 life at use conditions is 4,074 hours (95% CI 3,223 to 5,151), based on 210 failures and 423 right-censored units.",
+      "case_id": "lifetime-007",
+      "checks": {
+        "argument_exactness": true,
+        "entity": true,
+        "status": true,
+        "tool_selection": true
+      },
+      "family": "lifetime_fit",
+      "latency_ms": 87.5378749333322,
+      "passed": true
+    },
+    {
+      "answer": "Estimated B10 life at use conditions is 3,690 hours (95% CI 2,494 to 5,458), based on 65 failures and 67 right-censored units.",
+      "case_id": "lifetime-008",
+      "checks": {
+        "argument_exactness": true,
+        "entity": true,
+        "status": true,
+        "tool_selection": true
+      },
+      "family": "lifetime_fit",
+      "latency_ms": 25.75720800086856,
+      "passed": true
+    },
+    {
+      "answer": "The validated structured result is available in the evidence drawer.",
+      "case_id": "lookup-001",
+      "checks": {
+        "argument_exactness": true,
+        "entity": true,
+        "status": true,
+        "tool_selection": true
+      },
+      "family": "lookup",
+      "latency_ms": 30.78658413141966,
+      "passed": true
+    },
+    {
+      "answer": "The validated structured result is available in the evidence drawer.",
+      "case_id": "lookup-002",
+      "checks": {
+        "argument_exactness": true,
+        "entity": true,
+        "status": true,
+        "tool_selection": true
+      },
+      "family": "lookup",
+      "latency_ms": 14.861667063087225,
+      "passed": true
+    },
+    {
+      "answer": "The validated structured result is available in the evidence drawer.",
+      "case_id": "lookup-003",
+      "checks": {
+        "argument_exactness": true,
+        "entity": true,
+        "status": true,
+        "tool_selection": true
+      },
+      "family": "lookup",
+      "latency_ms": 13.774957973510027,
+      "passed": true
+    },
+    {
+      "answer": "The validated structured result is available in the evidence drawer.",
+      "case_id": "lookup-004",
+      "checks": {
+        "argument_exactness": true,
+        "entity": true,
+        "status": true,
+        "tool_selection": true
+      },
+      "family": "lookup",
+      "latency_ms": 13.494416838511825,
+      "passed": true
+    },
+    {
+      "answer": "The validated structured result is available in the evidence drawer.",
+      "case_id": "lookup-005",
+      "checks": {
+        "argument_exactness": true,
+        "entity": true,
+        "status": true,
+        "tool_selection": true
+      },
+      "family": "lookup",
+      "latency_ms": 12.443499872460961,
+      "passed": true
+    },
+    {
+      "answer": "The validated structured result is available in the evidence drawer.",
+      "case_id": "lookup-006",
+      "checks": {
+        "argument_exactness": true,
+        "entity": true,
+        "status": true,
+        "tool_selection": true
+      },
+      "family": "lookup",
+      "latency_ms": 13.683709083124995,
+      "passed": true
+    },
+    {
+      "answer": "The validated structured result is available in the evidence drawer.",
+      "case_id": "lookup-007",
+      "checks": {
+        "argument_exactness": true,
+        "entity": true,
+        "status": true,
+        "tool_selection": true
+      },
+      "family": "lookup",
+      "latency_ms": 10.9757911413908,
+      "passed": true
+    },
+    {
+      "answer": "The validated structured result is available in the evidence drawer.",
+      "case_id": "lookup-008",
+      "checks": {
+        "argument_exactness": true,
+        "entity": true,
+        "status": true,
+        "tool_selection": true
+      },
+      "family": "lookup",
+      "latency_ms": 9.627625113353133,
+      "passed": true
+    },
+    {
+      "answer": "The estimated slope is 0.009046 per day (p=2.073e-255) from 1484 measurements spanning 873.2 days.",
+      "case_id": "trend-001",
+      "checks": {
+        "argument_exactness": true,
+        "entity": true,
+        "status": true,
+        "tool_selection": true
+      },
+      "family": "trend_detection",
+      "latency_ms": 457.11179194040596,
+      "passed": true
+    },
+    {
+      "answer": "The estimated slope is 0.009046 per day (p=2.073e-255) from 1484 measurements spanning 873.2 days.",
+      "case_id": "trend-002",
+      "checks": {
+        "argument_exactness": true,
+        "entity": true,
+        "status": true,
+        "tool_selection": true
+      },
+      "family": "trend_detection",
+      "latency_ms": 453.7987920921296,
+      "passed": true
+    },
+    {
+      "answer": "The estimated slope is -6.414e-05 per day (p=0.03857) from 1484 measurements spanning 873.2 days.",
+      "case_id": "trend-003",
+      "checks": {
+        "argument_exactness": true,
+        "entity": true,
+        "status": true,
+        "tool_selection": true
+      },
+      "family": "trend_detection",
+      "latency_ms": 446.8332091346383,
+      "passed": true
+    },
+    {
+      "answer": "The estimated slope is -4.695e-06 per day (p=0.1339) from 1484 measurements spanning 873.2 days.",
+      "case_id": "trend-004",
+      "checks": {
+        "argument_exactness": true,
+        "entity": true,
+        "status": true,
+        "tool_selection": true
+      },
+      "family": "trend_detection",
+      "latency_ms": 450.34783403389156,
+      "passed": true
+    },
+    {
+      "answer": "The estimated slope is 0.009046 per day (p=2.073e-255) from 1484 measurements spanning 873.2 days.",
+      "case_id": "trend-005",
+      "checks": {
+        "argument_exactness": true,
+        "entity": true,
+        "status": true,
+        "tool_selection": true
+      },
+      "family": "trend_detection",
+      "latency_ms": 452.3931657895446,
+      "passed": true
+    },
+    {
+      "answer": "The estimated slope is -6.414e-05 per day (p=0.03857) from 1484 measurements spanning 873.2 days.",
+      "case_id": "trend-006",
+      "checks": {
+        "argument_exactness": true,
+        "entity": true,
+        "status": true,
+        "tool_selection": true
+      },
+      "family": "trend_detection",
+      "latency_ms": 456.27729198895395,
+      "passed": true
+    },
+    {
+      "answer": "The estimated slope is -4.695e-06 per day (p=0.1339) from 1484 measurements spanning 873.2 days.",
+      "case_id": "trend-007",
+      "checks": {
+        "argument_exactness": true,
+        "entity": true,
+        "status": true,
+        "tool_selection": true
+      },
+      "family": "trend_detection",
+      "latency_ms": 456.1081670690328,
+      "passed": true
+    },
+    {
+      "answer": "The estimated slope is 0.009046 per day (p=2.073e-255) from 1484 measurements spanning 873.2 days.",
+      "case_id": "trend-008",
+      "checks": {
+        "argument_exactness": true,
+        "entity": true,
+        "status": true,
+        "tool_selection": true
+      },
+      "family": "trend_detection",
+      "latency_ms": 460.993958869949,
+      "passed": true
+    }
+  ],
+  "generated_at": "2026-09-30T08:01:14.589098+00:00",
+  "passed": 64,
+  "per_family": {
+    "ambiguous": {
+      "p95_latency_ms": 0.09425007738173008,
+      "pass_rate": 1.0,
+      "passed": 8,
+      "total": 8
+    },
+    "anomaly_attribution": {
+      "p95_latency_ms": 22.0701249781996,
+      "pass_rate": 1.0,
+      "passed": 8,
+      "total": 8
+    },
+    "group_comparison": {
+      "p95_latency_ms": 13.624707935377955,
+      "pass_rate": 1.0,
+      "passed": 8,
+      "total": 8
+    },
+    "grouped_aggregation": {
+      "p95_latency_ms": 81.64300001226366,
+      "pass_rate": 1.0,
+      "passed": 8,
+      "total": 8
+    },
+    "insufficient_data": {
+      "p95_latency_ms": 6.401000078767538,
+      "pass_rate": 1.0,
+      "passed": 8,
+      "total": 8
+    },
+    "lifetime_fit": {
+      "p95_latency_ms": 87.5378749333322,
+      "pass_rate": 1.0,
+      "passed": 8,
+      "total": 8
+    },
+    "lookup": {
+      "p95_latency_ms": 30.78658413141966,
+      "pass_rate": 1.0,
+      "passed": 8,
+      "total": 8
+    },
+    "trend_detection": {
+      "p95_latency_ms": 460.993958869949,
+      "pass_rate": 1.0,
+      "passed": 8,
+      "total": 8
+    }
+  },
+  "split": "all",
+  "total": 64
+}

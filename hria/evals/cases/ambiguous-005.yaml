@@ -1,0 +1,6 @@
+id: ambiguous-005
+family: ambiguous
+split: development
+question: What is the lifetime?
+expects:
+  status: clarification

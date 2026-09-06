@@ -1,0 +1,6 @@
+id: ambiguous-007
+family: ambiguous
+split: held_out
+question: Is reliability good?
+expects:
+  status: clarification

@@ -1,0 +1,8 @@
+id: insufficient-006
+family: insufficient_data
+split: held_out
+question: What is the failure rate for LOT-9006?
+expects:
+  tools:
+  - failure_rate
+  status: insufficient_data

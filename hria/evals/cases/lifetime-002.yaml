@@ -1,0 +1,8 @@
+id: lifetime-002
+family: lifetime_fit
+split: development
+question: What is the B10 lifetime of LOT-0042 at use conditions?
+expects:
+  tools:
+  - fit_lifetime
+  status: answered

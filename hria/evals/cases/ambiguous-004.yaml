@@ -1,0 +1,6 @@
+id: ambiguous-004
+family: ambiguous
+split: development
+question: Is the station okay?
+expects:
+  status: clarification

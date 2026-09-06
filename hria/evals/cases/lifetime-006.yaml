@@ -1,0 +1,8 @@
+id: lifetime-006
+family: lifetime_fit
+split: held_out
+question: What is the B10 lifetime of SUPPLIER-03 at use conditions?
+expects:
+  tools:
+  - fit_lifetime
+  status: answered

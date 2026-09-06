@@ -1,0 +1,8 @@
+id: lifetime-001
+family: lifetime_fit
+split: development
+question: What is the B10 lifetime of PN-4471 at use conditions?
+expects:
+  tools:
+  - fit_lifetime
+  status: answered

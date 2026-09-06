@@ -1,0 +1,6 @@
+id: ambiguous-001
+family: ambiguous
+split: development
+question: Is this part reliable?
+expects:
+  status: clarification

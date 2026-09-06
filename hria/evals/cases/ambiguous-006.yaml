@@ -1,0 +1,6 @@
+id: ambiguous-006
+family: ambiguous
+split: held_out
+question: Compare these lots
+expects:
+  status: clarification

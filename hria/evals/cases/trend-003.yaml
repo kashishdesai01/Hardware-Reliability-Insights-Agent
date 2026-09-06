@@ -1,0 +1,9 @@
+id: trend-003
+family: trend_detection
+split: development
+question: Is STATION-007 leakage current drifting?
+expects:
+  tools:
+  - measurement_trend
+  args_contain:
+    station: STATION-007

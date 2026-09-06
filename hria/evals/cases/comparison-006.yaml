@@ -1,0 +1,11 @@
+id: comparison-006
+family: group_comparison
+split: held_out
+question: Compare LOT-0011 with LOT-0012; which is worse?
+expects:
+  tools:
+  - compare_groups
+  args_contain:
+    dimension: lot
+    group_a: LOT-0011
+    group_b: LOT-0012

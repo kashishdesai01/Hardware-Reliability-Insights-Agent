@@ -1,0 +1,11 @@
+id: lookup-006
+family: lookup
+split: held_out
+question: Show test runs for LOT-0006
+expects:
+  tools:
+  - query_test_runs
+  args_contain:
+    filters:
+      lot_code: LOT-0006
+  status: answered

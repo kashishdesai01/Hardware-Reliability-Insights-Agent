@@ -1,0 +1,9 @@
+id: trend-007
+family: trend_detection
+split: held_out
+question: Is STATION-007 output voltage drifting?
+expects:
+  tools:
+  - measurement_trend
+  args_contain:
+    station: STATION-007

@@ -1,0 +1,6 @@
+id: ambiguous-002
+family: ambiguous
+split: development
+question: Is it failing?
+expects:
+  status: clarification
