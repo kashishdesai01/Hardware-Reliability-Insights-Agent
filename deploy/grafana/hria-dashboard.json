@@ -1,0 +1,60 @@
+{
+  "annotations": {"list": []},
+  "editable": true,
+  "graphTooltip": 1,
+  "panels": [
+    {
+      "type": "timeseries", "title": "API p50 / p95 / p99 latency", "id": 1,
+      "gridPos": {"h": 8, "w": 12, "x": 0, "y": 0},
+      "targets": [
+        {"expr": "histogram_quantile(0.50, sum by (le) (rate(hria_request_latency_seconds_bucket[5m])))", "legendFormat": "p50"},
+        {"expr": "histogram_quantile(0.95, sum by (le) (rate(hria_request_latency_seconds_bucket[5m])))", "legendFormat": "p95"},
+        {"expr": "histogram_quantile(0.99, sum by (le) (rate(hria_request_latency_seconds_bucket[5m])))", "legendFormat": "p99"}
+      ],
+      "fieldConfig": {"defaults": {"unit": "s"}, "overrides": []}
+    },
+    {
+      "type": "timeseries", "title": "Tool p95 latency", "id": 2,
+      "gridPos": {"h": 8, "w": 12, "x": 12, "y": 0},
+      "targets": [{"expr": "histogram_quantile(0.95, sum by (tool, le) (rate(hria_tool_latency_seconds_bucket[5m])))", "legendFormat": "{{tool}}"}],
+      "fieldConfig": {"defaults": {"unit": "s"}, "overrides": []}
+    },
+    {
+      "type": "timeseries", "title": "Ready analysis jobs", "id": 3,
+      "gridPos": {"h": 7, "w": 8, "x": 0, "y": 8},
+      "targets": [{"expr": "sum(hria_arq_ready_jobs)", "legendFormat": "ready"}],
+      "fieldConfig": {"defaults": {"unit": "short"}, "overrides": []}
+    },
+    {
+      "type": "timeseries", "title": "Abstentions by tool", "id": 4,
+      "gridPos": {"h": 7, "w": 8, "x": 8, "y": 8},
+      "targets": [{"expr": "sum by (tool) (rate(hria_abstentions_total[5m]))", "legendFormat": "{{tool}}"}]
+    },
+    {
+      "type": "stat", "title": "Ungrounded numbers", "id": 5,
+      "gridPos": {"h": 7, "w": 8, "x": 16, "y": 8},
+      "targets": [{"expr": "sum(increase(hria_ungrounded_number_total[24h]))", "legendFormat": "24h"}],
+      "fieldConfig": {"defaults": {"thresholds": {"mode": "absolute", "steps": [{"color": "green", "value": null}, {"color": "red", "value": 1}]}}, "overrides": []}
+    },
+    {
+      "type": "bargauge", "title": "Eval pass rate by family", "id": 6,
+      "gridPos": {"h": 8, "w": 12, "x": 0, "y": 15},
+      "targets": [{"expr": "hria_eval_pass_rate", "legendFormat": "{{family}}"}],
+      "fieldConfig": {"defaults": {"min": 0, "max": 1, "unit": "percentunit"}, "overrides": []}
+    },
+    {
+      "type": "timeseries", "title": "Tokens per question", "id": 7,
+      "gridPos": {"h": 8, "w": 12, "x": 12, "y": 15},
+      "targets": [{"expr": "histogram_quantile(0.95, sum by (provider, le) (rate(hria_tokens_per_question_bucket[30m])))", "legendFormat": "{{provider}} p95"}]
+    }
+  ],
+  "refresh": "30s",
+  "schemaVersion": 41,
+  "tags": ["hria", "reliability", "evidence"],
+  "templating": {"list": []},
+  "time": {"from": "now-6h", "to": "now"},
+  "timezone": "browser",
+  "title": "HRIA · Reliability Evidence",
+  "uid": "hria-reliability",
+  "version": 1
+}

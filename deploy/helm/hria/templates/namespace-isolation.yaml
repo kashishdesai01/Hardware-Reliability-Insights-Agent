@@ -1,0 +1,53 @@
+{{- if .Values.engineerNamespace.enabled }}
+apiVersion: v1
+kind: Namespace
+metadata: { name: {{ required "engineerNamespace.name is required" .Values.engineerNamespace.name }} }
+---
+apiVersion: v1
+kind: ResourceQuota
+metadata: { name: hria-quota, namespace: {{ .Values.engineerNamespace.name }} }
+spec:
+  hard: { requests.cpu: {{ .Values.engineerNamespace.cpuQuota | quote }}, requests.memory: {{ .Values.engineerNamespace.memoryQuota | quote }}, limits.cpu: {{ .Values.engineerNamespace.cpuQuota | quote }}, limits.memory: {{ .Values.engineerNamespace.memoryQuota | quote }} }
+---
+apiVersion: v1
+kind: LimitRange
+metadata: { name: hria-limits, namespace: {{ .Values.engineerNamespace.name }} }
+spec:
+  limits:
+    - type: Container
+      default: { cpu: "1", memory: 1Gi }
+      defaultRequest: { cpu: 100m, memory: 128Mi }
+---
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata: { name: default-deny, namespace: {{ .Values.engineerNamespace.name }} }
+spec: { podSelector: {}, policyTypes: [Ingress, Egress] }
+---
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata: { name: allow-namespace-and-dns, namespace: {{ .Values.engineerNamespace.name }} }
+spec:
+  podSelector: {}
+  policyTypes: [Ingress, Egress]
+  ingress:
+    - from: [{ podSelector: {} }]
+  egress:
+    - to: [{ podSelector: {} }]
+    - to:
+        - namespaceSelector: { matchLabels: { kubernetes.io/metadata.name: kube-system } }
+      ports: [{ protocol: UDP, port: 53 }, { protocol: TCP, port: 53 }]
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata: { name: engineer, namespace: {{ .Values.engineerNamespace.name }} }
+rules:
+  - apiGroups: ["", "apps", "batch"]
+    resources: [pods, pods/log, services, configmaps, deployments, replicasets, jobs]
+    verbs: [get, list, watch, create, update, patch, delete]
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata: { name: engineer, namespace: {{ .Values.engineerNamespace.name }} }
+subjects: [{ kind: User, name: {{ required "engineerNamespace.engineerUser is required" .Values.engineerNamespace.engineerUser | quote }}, apiGroup: rbac.authorization.k8s.io }]
+roleRef: { kind: Role, name: engineer, apiGroup: rbac.authorization.k8s.io }
+{{- end }}

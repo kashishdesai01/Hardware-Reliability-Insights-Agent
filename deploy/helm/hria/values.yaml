@@ -1,0 +1,45 @@
+image:
+  repository: replace-me.dkr.ecr.us-west-2.amazonaws.com/hria
+  tag: latest
+  pullPolicy: IfNotPresent
+
+serviceAccount:
+  create: true
+  name: hria
+  roleArn: ""
+
+existingSecret: hria-runtime
+api:
+  replicas: 2
+  resources:
+    requests: { cpu: 200m, memory: 256Mi }
+    limits: { cpu: "1", memory: 1Gi }
+worker:
+  replicas: 1
+  resources:
+    requests: { cpu: 300m, memory: 512Mi }
+    limits: { cpu: "2", memory: 2Gi }
+
+service:
+  port: 80
+  targetPort: 8000
+
+autoscaling:
+  enabled: true
+  minReplicas: 1
+  maxReplicas: 12
+  queueTarget: 5
+  prometheusAddress: http://prometheus-operated.monitoring.svc:9090
+  cpuTarget: 75
+
+podDisruptionBudget:
+  minAvailable: 1
+
+engineerNamespace:
+  enabled: false
+  name: ""
+  engineerUser: ""
+  cpuQuota: "8"
+  memoryQuota: 16Gi
+
+logLevel: INFO

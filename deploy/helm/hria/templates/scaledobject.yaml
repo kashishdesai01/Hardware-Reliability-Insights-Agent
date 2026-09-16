@@ -1,0 +1,22 @@
+{{- if .Values.autoscaling.enabled }}
+apiVersion: keda.sh/v1alpha1
+kind: ScaledObject
+metadata:
+  name: {{ include "hria.name" . }}-worker
+spec:
+  scaleTargetRef: { name: {{ include "hria.name" . }}-worker }
+  minReplicaCount: {{ .Values.autoscaling.minReplicas }}
+  maxReplicaCount: {{ .Values.autoscaling.maxReplicas }}
+  cooldownPeriod: 60
+  triggers:
+    - type: prometheus
+      metadata:
+        serverAddress: {{ .Values.autoscaling.prometheusAddress | quote }}
+        metricName: hria_arq_ready_jobs
+        threshold: {{ .Values.autoscaling.queueTarget | quote }}
+        query: sum(hria_arq_ready_jobs{queue="arq:queue"})
+    - type: cpu
+      metricType: Utilization
+      metadata:
+        value: {{ .Values.autoscaling.cpuTarget | quote }}
+{{- end }}

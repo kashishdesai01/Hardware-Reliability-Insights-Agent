@@ -1,0 +1,14 @@
+api:
+  replicas: 1
+  resources:
+    requests: { cpu: 100m, memory: 192Mi }
+    limits: { cpu: 500m, memory: 512Mi }
+worker:
+  replicas: 1
+  resources:
+    requests: { cpu: 150m, memory: 256Mi }
+    limits: { cpu: "1", memory: 1Gi }
+autoscaling:
+  minReplicas: 0
+  maxReplicas: 4
+logLevel: DEBUG

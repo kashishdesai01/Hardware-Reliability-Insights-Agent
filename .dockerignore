@@ -1,0 +1,12 @@
+.git
+.venv
+.pytest_cache
+.ruff_cache
+.coverage
+**/__pycache__
+**/*.pyc
+deploy/terraform/.terraform
+web/node_modules
+web/.next
+node_modules
+.next

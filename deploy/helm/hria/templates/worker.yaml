@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "hria.name" . }}-worker
+  labels: {{- include "hria.labels" . | nindent 4 }}
+spec:
+  replicas: {{ .Values.worker.replicas }}
+  selector:
+    matchLabels: { app.kubernetes.io/name: hria, app.kubernetes.io/component: worker }
+  template:
+    metadata:
+      labels: { app.kubernetes.io/name: hria, app.kubernetes.io/component: worker }
+      annotations: { prometheus.io/scrape: "true", prometheus.io/port: "8001" }
+    spec:
+      terminationGracePeriodSeconds: 330
+      serviceAccountName: {{ include "hria.serviceAccountName" . }}
+      securityContext: { runAsNonRoot: true, seccompProfile: { type: RuntimeDefault } }
+      containers:
+        - name: worker
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          args: ["arq", "hria.worker.WorkerSettings"]
+          ports: [{ name: metrics, containerPort: 8001 }]
+          env:
+            - { name: LOG_LEVEL, value: {{ .Values.logLevel | quote }} }
+            - name: DATABASE_URL
+              valueFrom: { secretKeyRef: { name: {{ .Values.existingSecret }}, key: DATABASE_URL } }
+            - name: REDIS_URL
+              valueFrom: { secretKeyRef: { name: {{ .Values.existingSecret }}, key: REDIS_URL } }
+          resources: {{- toYaml .Values.worker.resources | nindent 12 }}
+          securityContext:
+            allowPrivilegeEscalation: false
+            readOnlyRootFilesystem: true
+            capabilities: { drop: ["ALL"] }
