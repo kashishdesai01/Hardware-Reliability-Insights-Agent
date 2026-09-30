@@ -156,15 +156,3 @@ Terraform provisions a VPC, private application and database subnets, EKS manage
 The Helm chart contains API and worker Deployments, migration hook, service account, probes, requests/limits, PodDisruptionBudget, and KEDA scaling on `hria_arq_ready_jobs` with CPU fallback. Optional per-engineer templates add a namespace, `ResourceQuota`, `LimitRange`, default-deny cross-namespace `NetworkPolicy`, and scoped `Role`/`RoleBinding`. `values-dev.yaml` and `values-prod.yaml` differ in replica counts, resources, logging, disruption settings, and namespace controls.
 
 Manual OpenTelemetry spans cover `intent_parse`, `plan`, every `tool_call`, and `synthesis`; FastAPI and SQLAlchemy are auto-instrumented. Structured logs include request and trace identifiers and intentionally omit row payloads.
-
-## What this does not claim
-
-- The dataset is synthetic. No real part, process, supplier, or test station was evaluated.
-- HRIA is not suitable for production qualification, warranty, safety, or reliability decisions without domain validation and model checking.
-- Weibull, independent competing-risk, Arrhenius, and inverse-power assumptions are explicit hypotheses, not universal physical laws.
-- An association with a lot, supplier, station, or revision does not establish root cause.
-- The station trend does not fully adjust for changing part mix.
-- Numerical grounding proves traceability to deterministic computation; it does not prove the computation's model assumptions are correct.
-- The optional OpenAI planner was contract-tested but not exercised against a live model without credentials.
-- Terraform was statically validated; no paid AWS resources were applied. There is therefore no claim of a successful live scale event or production readiness.
-- Namespace controls provide per-user workload isolation on a shared cluster. They do not prevent every noisy-neighbor condition, harden the node boundary, or reproduce a dedicated session-build platform.
